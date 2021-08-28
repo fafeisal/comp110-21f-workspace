@@ -1,4 +1,4 @@
-"""Part 2 of Exercise 01 for Comp 110 due 8/31/21"""
+"""Part 2 of Exercise 01 for Comp 110 due 8/31/21."""
 
 __author__ = "730474766"
 
