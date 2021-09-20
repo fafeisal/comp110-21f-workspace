@@ -17,11 +17,11 @@ def greet() -> None:
     return None
 
 
-def steal(points: int) -> int:
+def steal(cookie_points: int) -> int:
     """Second event in the case of stealing cookies."""
     print(f"Great job, {player}! Now you can make sure that no cookies go to waste! \nThere's no way your brother's friends could have finished all of them.")
     print("But why steal JUST one?")
-    cookie_points: int = points * int(input(f"{player}, how many do you wish to steal: "))
+    cookie_points += int(input(f"{player}, how many do you wish to steal: "))
     if cookie_points > 0:
         print("Great job! You get so many gold stars!")
     else:
