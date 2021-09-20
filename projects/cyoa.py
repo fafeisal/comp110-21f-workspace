@@ -62,7 +62,7 @@ def trash(points: int) -> int:
 
 
 def game() -> None:
-    """Main function to define game."""
+    """Main function to define morals with cookies game."""
     global points
     # points: int = 0
     points = 0
