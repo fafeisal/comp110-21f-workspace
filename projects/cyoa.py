@@ -5,6 +5,7 @@ __author__ = "730474766"
 
 from random import randint
 player: str = ""
+points: int
 
 
 def greet() -> None:
@@ -61,7 +62,7 @@ def trash(points: int) -> int:
     return cookie_points
 
 
-def game() -> None:
+def main() -> None:
     """Main function to define morals with cookies game."""
     global points
     # points: int = 0
@@ -91,7 +92,7 @@ def game() -> None:
         if cont != "Yes":
             print(f"Bye bye, {player}, have a good day! \n(and maybe come play again sometime)")
         while cont == "Yes":
-            game()
+            main()
             cont = ""
     else:
         print(f"Oh! Okay {player}, I guess you leave with {points} gold stars!")
@@ -100,4 +101,4 @@ def game() -> None:
 
 
 if __name__ == "__main__":
-    game()
+    main()
