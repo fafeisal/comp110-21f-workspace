@@ -7,12 +7,13 @@ def all(items: list[int], number: int) -> bool:
     """Verifying iff all items in list are the chosen int."""
     i: int = 0
     store: int = 0
+    position: int
     while i < len(items):
-        position: int = items[i]
+        position = items[i]
         if position == number:
             store += 1
         i += 1
-    if store == len(items):
+    if (store == len(items)) and (len(items) != 0):
         return True
     else:
         return False
@@ -22,11 +23,11 @@ def is_equal(first: list[int], second: list[int]) -> bool:
     """Verifying iff two lists are identical in value and index."""
     i: int = 0
     position: int = 0
-    while i < len(first) and len(second):
+    while (i < len(first)) and (i < len(second)):
         if first[i] == second[i]:
             position += 1
         i += 1
-    if position == len(first) and len(second):
+    if (((len(first) != 0) and (len(second) != 0)) or ((len(first) == 0) and (len(second) == 0))) and ((position == len(first)) and (position == len(second))):
         return True
     else:
         return False
