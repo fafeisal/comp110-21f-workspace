@@ -78,14 +78,14 @@ def test_concat_one_empty() -> None:
 
 
 def test_concat_many_items() -> None:
-    "Testing concat for two lists of many entries."
+    """Testing concat for two lists of many entries."""
     xs: list[int] = [5, 12, 0]
     ys: list[int] = [7, 9, 10]
     assert concat(xs, ys) == [5, 12, 0, 7, 9, 10]
 
 
 def test_concat_other_items() -> None:
-    "Testing concat again for two lists of other items."
+    """Testing concat again for two lists of other items."""
     xs: list[int] = [4, 5, 6]
     ys: list[int] = [3, 2, 1]
     assert concat(xs, ys) == [4, 5, 6, 3, 2, 1]
