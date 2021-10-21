@@ -8,8 +8,8 @@ __author__ = "730474766"
 
 # unit tests for invert
 def test_invert_key_error() -> None:
+    """Testing for KeyError in invert with repeat keys."""
     with pytest.raises(KeyError):
-        """Testing for KeyError in invert with repeat keys."""
         invert({'a': 'b', 'm': 'b'})
 
 
