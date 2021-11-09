@@ -26,5 +26,4 @@ class Point:
 
 p0: Point = Point(1.0, 2.0)
 p1: Point = p0.scale(2.0)
-print(f"{p0.x}, {p0.y}")
-print(f"{p1.x}, {p1.y}")
+print(f"({p0.x}, {p0.y})")
