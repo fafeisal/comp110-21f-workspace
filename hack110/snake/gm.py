@@ -1,4 +1,4 @@
-from enemy import Enemy
+from snake import Snake
 from projectile import Projectile
 from fighter import Fighter
 from vector import Vector
